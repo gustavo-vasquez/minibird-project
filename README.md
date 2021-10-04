@@ -57,7 +57,7 @@ TEMA OSCURO
 </ul>
 
 ## Notas
-El script de generación de la base de datos se encuentra en la carpeta "Sql_script" dentro del proyecto.
+El script de generación de la base de datos se encuentra en la carpeta "Sql_script" dentro del proyecto. Actualizar el archivo Web.config con tu propio "connection string" de la base de datos.
 
 ## Autor
 Gustavo Vasquez

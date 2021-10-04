@@ -37,6 +37,12 @@
     resize: none;
 }
 
-/*.profile_screen-trends > h5 > a {
-    margin-right: 1rem !important;
-}*/
+.profile_screen-trends {
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.profile_screen-trends > h5 {
+    margin-bottom: 0rem;
+}

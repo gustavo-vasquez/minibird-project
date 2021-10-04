@@ -47,8 +47,12 @@ namespace MiniBird.Filters
             {
                 if (_authenticationRequired)
                 {
-                    if (filterContext.HttpContext.Session["MiniBirdAccount"] == null)                        
-                        filterContext.Result = new HttpStatusCodeResult(403, "Acceso no autorizado - Solo usuarios registrados pueden ver el contenido");
+                    if (filterContext.HttpContext.Session["MiniBirdAccount"] == null)
+                        filterContext.Result = new RedirectToRouteResult(new System.Web.Routing.RouteValueDictionary()
+                        {
+                            { "controller", "Home" },
+                            { "action", "Welcome" }
+                        });
                 }                    
             }
         }
